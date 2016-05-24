@@ -3,6 +3,8 @@ USEFUL PHP
 
 *In this file stored all PHP Scripts from this folder*
 
+You can test the code on [PhpFiddle](http://phpfiddle.org/)
+
 ***
 
 **Explode string and push to variables using _list_**

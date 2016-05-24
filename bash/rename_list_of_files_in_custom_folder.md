@@ -1,39 +1,17 @@
-USEFUL BASH SCRIPTS
-===================
-
-*In this file stored all Bash Scripts from this folder*
-
-***
-
-**Store name of files in directory to file**
-
-```bash
-#!/bin/bash
-
-# Store folder content into array
-i=0
-while read line
-do
-    array[ $i ]="$line"
-    (( i++ ))
-done < <(ls folder/)
-
-# Iterate through file names in array
-n=0
-while [ $n -le $i ] 
-do
-    name=$(echo ${array[n]})
-    echo $name>>result 2>/dev/null
-    (( n++ ))
-done
-```
-
-***
-
 **Rename list of files in custom folder**
 
 ```bash
 #!/bin/bash
+
+
+# Prepare test data
+rm -rf folder/
+mkdir folder/
+
+touch folder/Kiev
+touch folder/Lemberg
+touch folder/Odessa
+touch folder/Paris
 
 # Declare array to rename files
 declare -A translateArray=(
@@ -68,5 +46,3 @@ do
 done
 
 ```
-
-***
