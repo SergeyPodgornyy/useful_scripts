@@ -66,3 +66,14 @@ $("textarea#element_id").keydown(function () {
     this.style.height = (this.scrollHeight+25) + 'px';    //Set new height
 });
 ```
+
+***
+
+**Get first element in object**
+
+```js
+var obj = { first: 'firstVal', second: 'secondVal' };
+var firstEl = obj[Object.keys(obj)[0]];
+```
+
+***
